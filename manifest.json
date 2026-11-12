@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Just Search XHS",
-  "version": "1.2.7",
+  "version": "1.3.0",
   "description": "居中搜索首页、侧栏收起和菜单显示设置。基于 Xiaohongshu Focus 定制。",
   "permissions": [
     "storage"
