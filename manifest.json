@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Just Search XHS",
+  "version": "1.2.7",
+  "description": "居中搜索首页、侧栏收起和菜单显示设置。基于 Xiaohongshu Focus 定制。",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.xiaohongshu.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Just Search XHS"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.xiaohongshu.com/*"
+      ],
+      "js": [
+        "settings.js",
+        "contentScript.js",
+        "centerHome.js",
+        "sidebar.js"
+      ],
+      "run_at": "document_start",
+      "css": [
+        "centerHome.css",
+        "sidebar.css"
+      ]
+    }
+  ],
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

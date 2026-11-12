@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Just Search XHS</title>
+<link href="popup.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Based on Xiaohongshu Focus, © 2024-2026. Original attribution retained in README.md. -->
+<main class="container">
+<header class="header">
+<h1>Just Search XHS</h1>
+<span class="version">1.2.7</span>
+</header>
+<section aria-labelledby="home-title" class="settings-section">
+<h2 id="home-title">首页</h2>
+<div class="setting-row">
+<label for="toggle-feed">隐藏首页推荐</label>
+<label class="toggle">
+<input id="toggle-feed" type="checkbox"/>
+<span aria-hidden="true" class="slider"></span>
+</label>
+</div>
+
+<p class="section-note" id="home-note">切换推荐显示会刷新首页。</p>
+</section>
+<section aria-labelledby="sidebar-title" class="settings-section">
+<h2 id="sidebar-title">侧栏</h2>
+<div class="setting-row">
+<label for="toggle-sidebar-collapsed">收起侧栏</label>
+<label class="toggle">
+<input id="toggle-sidebar-collapsed" type="checkbox"/>
+<span aria-hidden="true" class="slider"></span>
+</label>
+</div>
+<fieldset class="sidebar-menu">
+<legend>显示菜单</legend>
+<div id="sidebar-menu-options"></div>
+</fieldset>
+</section>
+<section aria-labelledby="other-title" class="settings-section">
+<h2 id="other-title">其他</h2>
+
+<div class="setting-row">
+<label for="toggle-notification-badge">隐藏通知红点</label>
+<label class="toggle">
+<input id="toggle-notification-badge" type="checkbox"/>
+<span aria-hidden="true" class="slider"></span>
+</label>
+</div>
+</section>
+<p aria-live="polite" id="settings-status" role="status"></p>
+<footer>设置自动保存</footer>
+</main>
+<script src="settings.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
